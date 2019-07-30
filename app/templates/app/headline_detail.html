@@ -1,0 +1,9 @@
+{%extends "base.html" %}
+
+
+{% block content %}
+<h1>{{object.instrument}}</h1>
+<p> Price: {{object.price}}</p>
+<p> Percent change: {{object.change}}</p>
+<p> {{object.timestamp}}</p>
+{% endblock %}

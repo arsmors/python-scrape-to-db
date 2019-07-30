@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+ <h1> Most Popular Stocks</h1>
+ <ul>
+  {% for obj in object_list %}
+  <li><a href='/headlines/{{ obj.slug}}/'>{{obj}}</a><br/>
+
+    <!--{{ obj.title}} {{ obj.url}} -->
+    </li>
+  {% endfor %}
+</ul>
+
+{% endblock content %}
